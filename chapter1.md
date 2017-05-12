@@ -67,6 +67,7 @@ A dataset with a selection of movies, `movie_selection`, is available in the wor
 ```{r}
 # You can also prepare your dataset in a specific way in the pre exercise code
 load(url("https://s3.amazonaws.com/assets.datacamp.com/course/teach/movies.RData"))
+library(OneR)
 movie_selection <- Movies[Movies$Genre %in% c("action", "animated", "comedy"), c("Genre", "Rating", "Run")]
 
 # Clean up the environment
